@@ -5,7 +5,7 @@
         <!-- <p class="txt_c"> {{ titulo }} </p> -->
         <!-- <div class="row"> -->
             <!-- <div class="col-5"> -->
-                <img class="team-imagenPerfil " v-bind:src= 'member.imagen' alt="Images Equipo">
+                <img v-bind:src= "member.imagen" alt="Images Equipo" class="team-imagenPerfil " >
                     <h3 class="">Team member: {{member.codigo}} {{member.rol}} </h3>
                     <p class=""> {{ member.nombre }} </p>
                     <span class=""> {{ member.Descripcion }}
@@ -26,11 +26,13 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style >
 
+/* INICIA CODIGO ESTILO TEAMCARD */
 body{
   font-family: 'Merriweather', serif;
   background: #c8c7c7;
+  text-align: center;
 }
 
 
@@ -44,20 +46,24 @@ body{
 
 /* MODIFICACIONES ESTILOS BOOTSTRAP */
 .col-5 {
+  /* width: 100%; */
   max-width: 100%;
+  height: 380px;
   text-align: justify;
-  flex: 1;
-  box-sizing: content-box;
+  /* display: block; */
+  /* flex: 1; */
+  /* box-sizing: content-box; */
   margin-bottom: 15px;
   border-radius: 0.7cm;
   background: #213755;
+  margin: 5px;
 }
 
 .row {
   width: 100%;
   margin-right: 0px;
   margin-left: 0px;
-  /* display: block; */
+  display: block;
 }
 
 h3 {
@@ -116,8 +122,8 @@ span {
   }
 
   .col-5 {
-    max-width: 96%;
-    height: 520px;
+    max-width: 100%;
+    height: 525px;
     /* vertical-align: middle; */
     float: none;
   }
@@ -225,6 +231,13 @@ span {
     font-size: 22px;
   }
 }
+
+
+
+
+
+/* FINALIZA CODIGO ESTILO TEAMCARD */
+
 
 
 
