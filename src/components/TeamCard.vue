@@ -5,7 +5,7 @@
         <!-- <p class="txt_c"> {{ titulo }} </p> -->
         <!-- <div class="row"> -->
             <!-- <div class="col-5"> -->
-                <img v-bind:src= "member.imagen" alt="Images Equipo" class="team-imagenPerfil " >
+                <img v-bind:src= "member.image" alt="Images Equipo" class="team-imagenPerfil " >
                     <h3 class="titulos">Team member: {{member.codigo}} {{member.rol}} </h3>
                     <p class="parrafo"> {{ member.nombre }} </p>
                     <span class="descripcion"> {{ member.Descripcion }}
