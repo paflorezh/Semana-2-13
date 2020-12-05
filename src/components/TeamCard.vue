@@ -8,7 +8,7 @@
                 <img v-bind:src= "member.image" alt="Images Equipo" class="team-imagenPerfil " >
                     <h3 class="titulos">Team member: {{member.codigo}} {{member.rol}} </h3>
                     <p class="parrafo"> {{ member.nombre }} </p>
-                    <span class="descripcion"> {{ member.Descripcion }}
+                    <span class="descripcion"> {{ member.descripcion }}
                     </span>
             <!-- </div> -->
         <!-- </div> -->
